@@ -1,51 +1,41 @@
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kronik3r/daktilo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# resumecard
+-------
+resumecard is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal resume.  
 
-# Daktilo
-Daktilo is a [Jekyll](jekyllrb.com) theme with a minimal design inspired from typewriters.
+[![Build Status](https://travis-ci.org/ddbullfrog/resumecard.svg?branch=master)](https://travis-ci.org/ddbullfrog/resumecard)
 
-# More info and Live preview
-[Click here](http://daktilo.github.io/) to see the theme in action.
+## Demo
+-------
+You can see the live demo of [resumecard](https://ddbullfrog.github.io/resumecard)
 
-# Features
-- Fully responsive
-- [Disqus](https://disqus.com/) integration for comments.
-- Google Analytics integration.
-- Syntax Highlighter (using [highlight.js](https://highlightjs.org/)).
-- Support for categories.
-- Font-Awesome Icons.
-- Optimized for SEO.
-- Coolest [404 page ever](http://electrik-frog.com/daktilo/404.html).
+This is the web page on desktop browser.
 
-# How to use it
-Start by cloning the repository, then check the `_config.yml` file and change it accordingly.
-Note that the `title` property is what will be displayed as logo.
+![Desktop](https://github.com/ddbullfrog/resumecard/blob/gh-pages/_assets/normal.jpg)
 
-Finally execute `jekyll serve --watch` and head to [localhost:4000](http://127.0.0.1:4000) to see the result.
+## Getting Started
+-------
+- [Fork this repository](https://github.com/ddbullfrog/resumecard/fork)
+- Clone it: `git clone https://github.com/YOUR-USER/resumecard`
+- Run the jekyll server: `jekyll serve`
 
-# Using categories
-Categories are little bit tricky. Please make sure to do the following for each category:
+You should have a server up and running locally at <http://localhost:4000>.
 
-- Create a file within `categories` folder with the name of your category
-For example let's say that we have a category called `An Awesome Category` you will need to add an `an-awesome-category.html` file with this content:
+## Features
+-------
+- Responsive Jekyll theme
+- Easy integration with Google Analytics
 
-``` html
----
-layout: category
-category: an-awesome-category
-permalink: /categories/an-awesome-category/
----
+## Configuration
+-------
+- _config.yml
+-  CNAME
+	If you're using it on GitHub Pages with a custom domain name, 
+	you'll want to change it to be the domain you're going to use. 
+	All that should be in here is a domain name on the first line and nothing else (like: `example.com`).
+-  avatar.JPG
+	This is a smaller version of my gravatar for use as the icon in your browser's address bar. 
+	You should change it to whatever you'd like.
 
-```
-
-- Create an entry inside `_data/categories.yml`
-
-``` html
-- slug: an-awesome-category
-  name: An Awesome Category
-```
-
-- Then you will see it in the footer in the `Explore` section.
-
-# License
-
-The contents of this repository is licensed under [The MIT License.](https://opensource.org/licenses/MIT)
+## License
+-------
+Open sourced under the [MIT license](LICENSE.md).

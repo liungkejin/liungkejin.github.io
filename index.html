@@ -1,18 +1,135 @@
 ---
-layout: page
-title: Blog
-subtitle: Hitchhiker's guid to web development
-sitemap:
-  priority: 0.9
+layout: default
 ---
-
-<ul class="list-posts">
-    {% for post in site.posts %}
-        <li class="post-teaser">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <span class="post-teaser__title">{{ post.title }}</span>
-                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-8">
+            {% if site.author.workHistory %}
+                <h3 class="title with-icon"><span class="glyphicon glyphicon-plane cat-title"></span>Work History</h3>
+                <ul class="timeline">
+                    {% for work in site.author.workHistory %}
+                        <li class="timeline-inverted">
+                            {% if work.started %}
+                                <div class="timeline-badge info">{{ work.started }}</div>
+                            {% endif %}
+                            <div class="timeline-panel grid-block">
+                                <div class="timeline-heading">
+                                    {% if work.company %}
+                                        <h4 class="timeline-title">{{ work.company }} </h4>
+                                    {% endif %}
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if work.title %}
+                                                {{ work.title }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if work.duration %}
+                                                <i class="fa fa-calendar"></i> {{ work.duration }} |
+                                            {% endif %}
+                                            {% if work.location %}
+                                                <i class="fa fa-map-marker"></i>  {{ work.location }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    {% if work.description %}
+                                        <p>{{ work.description }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% if site.author.educationHistory %}
+                <h3 class="title with-icon"><span class="fa fa-book cat-title"></span>Education History</h3>
+                <ul class="timeline">
+                    {% for education in site.author.educationHistory %}
+                        <li class="timeline-inverted">
+                            {% if education.started %}
+                                <div class="timeline-badge info">{{ education.started }}</div>
+                            {% endif %}
+                            <div class="timeline-panel grid-block">
+                                <div class="timeline-heading">
+                                    {% if education.organization %}
+                                        <h4 class="timeline-title">{{ education.organization }}</h4>
+                                    {% endif %}
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if education.degree %}
+                                                {{ education.degree }}
+                                            {% endif %}
+                                            {% if education.major %}
+                                                , {{ education.major }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                    {% if education.duration %}
+                                        <p>
+                                            <small class="text-muted"><i class="fa fa-calendar"></i> {{ education.duration }}
+                                            </small>
+                                        </p>
+                                    {% endif %}
+                                </div>
+                                <div class="timeline-body">
+                                    {% if education.description %}
+                                        <p>{{ education.description }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="col-md-4">
+            {% if site.author.programmingSkills %}
+                <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
+                <div class="grid-block">
+                    <ul class="list-unstyled list-skills">
+                        {% for programmingSkill in site.author.programmingSkills %}
+                            <li>
+                                {% if programmingSkill.name %}
+                                    <span class="caption-skill">{{ programmingSkill.name }}</span>
+                                {% endif %}
+                                {% if programmingSkill.percentage %}
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: {{ programmingSkill.percentage }}">
+                                            <span>{{ programmingSkill.percentage }} </span>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            {% if site.author.languages %}
+                <div class="deviter"></div>
+                <h3 class="title with-icon"><span class="fa fa-globe cat-title"></span> Language Skills</h3>
+                <div class="grid-block">
+                    <ul class="list-unstyled list-strip">
+                        {% for language in site.author.languages %}
+                            {% if language.name %}
+                                {% if language.proficiency %}
+                                    <li>
+                                        <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float">{{ language.proficiency }}</span>{{ language.name }}
+                                    </li>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            <div class="deviter"></div>
+            <h3 class="title with-icon"><span class="fa fa-location-arrow cat-title"></span> Location</h3>
+            <div class="grid-block">
+                <iframe src="https://www.google.com/maps/embed/v1/place?q=auckland&key=AIzaSyClEWLh20lxrQBFR7omuuVESviszPxONyk" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

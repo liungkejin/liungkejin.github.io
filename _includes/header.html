@@ -1,24 +1,22 @@
-<header class="header">
-    <div class="navigation">
-        <a href="/" class="logo">{{ site.title }}</a>
-
-        <ul class="menu">
-            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-            <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
-        </ul>
+<div class="header">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-sm-4">
+                <img src="/assets/img/avatar.JPG" title="Avatar" alt="My Avatar">
+                <h4>{{ site.author.name }}</h4>
+                <p>{{ site.author.title }}</p>
+                <p class="muted">{{ site.author.address }}</p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-sm-4 visible-md-block visible-lg-block visible-sm-block">
+                <p><i class="fa fa-envelope-o fa-fw"></i> {{ site.author.email }} </p>
+                <p><i class="fa fa-github fa-fw"></i><a href="https://github.com/{{ site.author.github }}" target="_blank">  @{{ site.author.github }} </a></p>
+                <p><i class="fa fa-linkedin-square fa-fw"></i> <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank"> linkedin.com/in/{{ site.author.linkedin }} </a></p>
+                <p><i class="fa fa-twitter fa-fw"></i> <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">  @{{ site.author.twitter }} </a></p>
+            </div>
+            <div class="col-sm-4 visible-md-block visible-lg-block">
+                <a href="#" class="btn btn-dark"><i class="icon-file icon-white"></i> Download.pdf </a>
+            </div>
+        </div>
     </div>
-
-    <ul class="social-links">
-        {% if site.author.github %}
-            <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-github"></i>
-            </a>
-        {% endif %}
-
-        {% if site.author.twitter %}
-            <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-twitter"></i>
-            </a>
-        {% endif %}
-    </ul>
-</header>
+</div>
