@@ -1,9 +1,9 @@
 # Site settings
-title: Dong Liang's CV 
-description: ddbullfrog's CV
-favicon: /resumecard/assets/img/avatar.JPG
-baseurl: https://ddbullfrog.github.io/resumecard
-url: https://ddbullfrog.github.io/resumecard
+title: Liang Ke Jin
+description: Liang Ke Jin
+favicon: /assets/img/avatar.JPG
+baseurl: https://liungkejin.github.io
+url: https://liungkejin.github.io
 rss_url: /resumecard/pages/atom.xml
 
 # Build settings
@@ -13,69 +13,61 @@ exclude: [vendor]
 
 # Author settings
 author:
-  name: Dong Liang
-  title: Java Developer
-  address: Auckland, New Zealand
-  email: dongg.liang@gmail.com
+  name: 梁窠金
+  title: Android Developer
+  address: 中国, 上海
+  email: liungkejin@foxmail.com
   link: http://ddbullfrog.com
   weibo:
-  github: ddbullfrog
-  linkedin: ddbullfrog
-  twitter: ddbullfrog
-  gavatar: /resumecard/assets/img/avatar.JPG
+  github: liungkejin
+  gavatar: /assets/img/avatar.JPG
   workHistory:
     - work1:
-      company: Finzsoft Solutions Ltd
-      location: Auckland, New Zealand
-      title: Java Developer
-      started: 2014
-      duration: (2014 - Present)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+      company: 合肥卓远电子科技有限公司
+      location: 中国, 合肥
+      title: Linux 程序员
+      started: 2013
+      duration: (2013.6 - 2013.9)
+      description: 在嵌入式 Linux 环境下开发程序 (信号发生器，监控摄像头)
     - work2:
-      company: Agfa HealthCare
-      location: Shanghai, China
-      title: Java Developer
-      started: 2012
-      duration: (2012 - 2014)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+      company: 比亚迪精密制造上海分公司
+      location: 中国，上海
+      title: Android 开发工程师
+      started: 2014
+      duration: (2014.8 - 2015.8)
+      description: 在Android系统环境下修复所存在的 bug, 并开发新功能, 主要负责 RIL/Telephony
     - work3:
-      company: Citigroup Services and Technology (China) Limited
-      location: Shanghai, China
-      title: Java Developer
-      started: 2009
-      duration: (2009 - 2012)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+      company: 上海大银幕网络科技有限公司
+      location: 中国，上海
+      title: Android 开发工程师
+      started: 2015
+      duration: (2015.11 - Present)
+      description: 开发和维护 "公证电影" App
   educationHistory:
     - education1:
-      organization: Northeastern University
-      degree: Bachelor
-      major: Software Engineering
-      started: 2005
-      duration: (2005 - 2009)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+      organization: 安徽大学
+      degree: 学士
+      major: 化学工程与工艺
+      started: 2010
+      duration: (2010.9 - 2014.7)
+      description: 自学 C/C++, Java, Linux, 培训并参加过 ACM 比赛
   languages:
     - language1:
-      name: Chinese
+      name: 中文
       proficiency: Native
     - language2:
       name: English
-      proficiency: Professional
-    - language3:
-      name: Japanese
       proficiency: Limit
   programmingSkills:
     - skill1:
-      name: HTML
+      name: Java/Android
       percentage: 100%
     - skill2:
-      name: Bootstrap
+      name: Bash Shell
       percentage: 90%
     - skill3:
-      name: JavaScript
+      name: C/C++
       percentage: 80%
     - skill4:
-      name: AngularJS
-      percentage: 80%
-    - skill5:
-      name: Java/Java EE
-      percentage: 90%
+      name: PHP
+      percentage: 50%
