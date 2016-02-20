@@ -14,7 +14,7 @@ exclude: [vendor]
 # Author settings
 author:
   name: 梁窠金
-  title: Android Developer
+  title: Android 开发工程师
   address: 中国, 上海
   email: liungkejin@foxmail.com
   link: http://ddbullfrog.com
@@ -45,7 +45,7 @@ author:
       started: 2013
       duration: (2013.6 - 2013.9)
       description: 在嵌入式 Linux 环境下开发程序 (信号发生器，监控摄像头)
-      
+
   educationHistory:
     - education1:
       organization: 安徽大学
