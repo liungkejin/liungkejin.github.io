@@ -1,0 +1,21 @@
+<div class="header">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="col-md-6">
+                <a href="index.html"><img src="/assets/img/avatar.JPG" title="Avatar" alt="My Avatar"></a>
+                <h4>{{ site.data.author.name }}</h4>
+                <p>{{ site.data.author.title }}</p>
+                <p class="muted">{{ site.data.author.address }}</p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-4">
+                <h4>&nbsp;</h4>
+                <p><i class="fa fa-github fa-fw"></i><a href="https://github.com/{{ site.data.author.github }}" target="_blank">  <font color="#5F9EA0">{{ site.data.author.github }}</font> </a></p>
+                <p><i class="fa fa-envelope-o fa-fw"></i> {{ site.data.author.email }} </p>
+            </div>
+            <!-- <div class="col-sm-4 visible-md-block visible-lg-block">
+                <a href="#" class="btn btn-dark"><i class="icon-file icon-white"></i> Download.pdf </a>
+            </div> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    {% include head.html %}
+    <body>
+        {% include blog_header.html %}
+
+        <main class="blogmain">
+            <header>
+                <h1 class="article-title">{{ page.title }}</h1>
+                <p class="article-time">
+                    {{ page.date  | date: "%Y年%m月%d 星期%w" }},  发表于 <span style="color:#337ab7">{{ page.location }}</span>
+                </p>
+            </header>
+            {{ content }}
+            {% include post_footer.html %}
+        </main>
+
+        {% include footer.html %}
+        {% include googleanalytics.html %}
+    </body>
+
+</html>

@@ -1,0 +1,193 @@
+.blogbody {
+}
+
+/* Header */
+.bloghead {
+    position: relative;
+    /*padding: 2rem 1rem;*/
+    font-weight: 200;
+    color: #333;
+    text-align: center;
+    /*text-shadow: 0 1px 0 rgba(0,0,0,.1);*/
+    background-color: #fff;
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+  /*background-color: #6f5499;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(#6f5499));
+  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
+  background-image:      -o-linear-gradient(top, #563d7c 0%, #6f5499 100%);
+  background-image:         linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+  background-repeat: repeat-x;*/
+}
+
+.blogtitle {
+  font-weight: 400;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-family: courier;
+}
+
+.bloghead p {
+    font-weight: 400;
+}
+
+.bloghead img , .authorimage img{
+    height: 85px;
+    padding: 10px;
+}
+
+nav {
+  border-bottom: 1px solid #ecf0f1;
+  border-top: 1px solid #ecf0f1;
+  margin-bottom: 2em;
+  text-align: center;
+  margin: 20px auto 2em auto;
+  max-width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 .5em;
+  text-align: center;
+  /*text-transform: uppercase;*/
+}
+
+nav ul li a {
+  display: block;
+  padding: .5em 0;
+  color: #3498db;
+}
+
+nav.menu {
+  margin-bottom: 2.5em;
+}
+
+nav.menu li {
+  margin: 0 .5em;
+  padding: 0;
+}
+
+nav.menu li:last-child {
+  margin: 0;
+}
+
+/****
+ * Main body
+ */
+
+.blogmain {
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+    font-size: 18px;
+}
+
+article.preview {
+    margin-bottom: 4em;
+}
+
+.post-title {
+    text-align: left;
+}
+
+.post-section {
+    font-size: 18px;
+}
+
+.post-time {
+    color: #95a5a6;
+    font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+p.readmore {
+    color: #337ab7;
+    margin-top: 1em;
+    text-align: right;
+}
+
+/**
+ * 文章全文
+ */
+
+.article-title {
+    text-align: center;
+}
+
+.article-time {
+    color: #95a5a6;
+    font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;;
+    margin-bottom: 20px;
+}
+
+.article-footer {
+    background-color: transparent;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    /*
+    border-top: 1px solid #ecf0f1;*/
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(236, 240, 241);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+section.author, section.share {
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+div.authorimage {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    margin-right: 20px;
+    float: left;
+}
+
+.footer-copyright {
+    padding: 30px 0;
+    text-align: center;
+    color: #f0f0f0;
+    background-color: #575757;
+    background-color: rgba(51, 123, 181, 0.6);
+    font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L",sans-serif;
+}
