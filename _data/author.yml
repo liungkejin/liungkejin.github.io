@@ -11,7 +11,7 @@ workHistory:
   location: 中国，上海
   title: Android 开发工程师
   started: 2015
-  duration: (2015.11 - Present)
+  duration: (2015.10 - Present)
   description: 开发和维护 "公证电影" App
 
 - work2:
@@ -48,13 +48,13 @@ languages:
 programmingSkills:
 - skill1:
   name: Java/Android
-  percentage: 100%
+  percentage: 90%
 - skill2:
   name: Bash Shell
   percentage: 90%
 - skill3:
   name: C/C++
-  percentage: 80%
+  percentage: 70%
 - skill4:
   name: PHP
   percentage: 50%

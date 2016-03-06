@@ -13,5 +13,5 @@ timezone: Asia/Shanghai
 
 # exclude: [vendor]
 
-paginate: 5
-paginate_path: "blog/page:num"
+# paginate: 5
+# paginate_path: "blog/page:num"

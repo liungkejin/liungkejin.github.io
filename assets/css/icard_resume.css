@@ -1,6 +1,6 @@
 body {
     background-color: #fff;
-    /*background-image: url(../img/bg.jpg);*/
+    background-image: url(../img/bg.jpg);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -415,4 +415,9 @@ hr {
 
 .badge-right-float {
     float: right;
+}
+
+.row-center {
+    margin-left: auto;
+    margin-right: auto;
 }
