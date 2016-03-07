@@ -183,6 +183,13 @@ div.authorimage {
     float: left;
 }
 
+.smenu {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .footer-copyright {
     padding: 30px 0;
     text-align: center;
@@ -190,4 +197,5 @@ div.authorimage {
     background-color: #575757;
     background-color: rgba(51, 123, 181, 0.6);
     font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L",sans-serif;
+    margin-top: 40px;
 }

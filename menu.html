@@ -3,7 +3,12 @@ layout: blog_layout
 ---
 
 {% for post in site.posts %}
-    <p>
-        {{ post.time  | date: "%Y年%m月%d 星期%w" }} : <a href="{{post.url}}"> {{post.title}} </a>
-    </p>
+    <section class="smenu">
+        {{ post.time  | date: "%Y/%m/%d" }}
+        &nbsp;&nbsp;
+        <a href="{{post.url}}">
+            <span class="glyphicon glyphicon-hand-right">  </span>
+            &nbsp;&nbsp; {{post.title}}
+        </a>
+    </section>
 {% endfor %}

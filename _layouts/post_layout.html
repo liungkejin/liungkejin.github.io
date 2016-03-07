@@ -8,7 +8,7 @@
             <header>
                 <h1 class="article-title">{{ page.title }}</h1>
                 <p class="article-time">
-                    {{ page.date  | date: "%Y年%m月%d 星期%w" }},  发表于 <span style="color:#337ab7">{{ page.location }}</span>
+                    {{ page.date  | date: "%Y年%m月%d 星期%w" }},  发表于 <span>{{ page.location }}</span>
                 </p>
             </header>
             {{ content }}
