@@ -27,7 +27,7 @@
   color: #000;
   margin-top: 0;
   margin-bottom: 1rem;
-  /*font-size: 5rem;*/
+  font-size: 5rem;
   font-family: courier;
 }
 
@@ -116,7 +116,7 @@ article.preview {
 .post-time {
     color: #95a5a6;
     font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
     text-align: left;
