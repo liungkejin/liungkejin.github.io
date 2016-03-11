@@ -46,15 +46,21 @@ languages:
   name: English
   proficiency: Limit
 programmingSkills:
-- skill1:
+- Java:
   name: Java/Android
   percentage: 90%
-- skill2:
+- Bash:
   name: Bash Shell
   percentage: 90%
-- skill3:
+- CPP:
   name: C/C++
   percentage: 70%
-- skill4:
+- PHP:
   name: PHP
+  percentage: 30%
+- Python:
+  name: Python
+  percentage: 30%
+- Kotlin:
+  name: Kotlin
   percentage: 50%
