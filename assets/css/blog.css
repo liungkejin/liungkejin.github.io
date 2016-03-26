@@ -185,9 +185,10 @@ div.authorimage {
 
 .smenu {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 50px;
 }
 
 .footer-copyright {
