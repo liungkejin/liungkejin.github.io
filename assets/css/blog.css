@@ -97,7 +97,7 @@ nav.menu li:last-child {
     width: 90%;
     margin: 20px auto;
     font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-    font-size: 18px;
+    /*font-size: 18px;*/
 }
 
 article.preview {
