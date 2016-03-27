@@ -7,7 +7,7 @@ url: https://liungkejin.github.io
 rss_url:
 
 # Build settings
-# markdown: kramdown
+markdown: kramdown
 
 timezone: Asia/Shanghai
 
