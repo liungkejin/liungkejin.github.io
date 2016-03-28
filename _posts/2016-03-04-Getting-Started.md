@@ -16,6 +16,6 @@ excerpt_separator: "```"
 个人页面应用了 [resumecard](http://ddbullfrog.github.io/resumecard/) 项目
 
 
-{% highlight bash %}
+```bash
 echo "你好, Github Pages!";
-{% endhighlight %}
+```
