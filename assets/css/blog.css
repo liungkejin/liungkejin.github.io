@@ -7,12 +7,12 @@
     /*padding: 2rem 1rem;*/
     font-weight: 200;
     color: #333;
-    text-align: center;
+    text-align: left;;
     /*text-shadow: 0 1px 0 rgba(0,0,0,.1);*/
     background-color: #fff;
     max-width: 600px;
     width: 90%;
-    margin: 20px auto;
+    margin: 30px auto;
   /*background-color: #6f5499;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(#6f5499));
   background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
@@ -22,6 +22,10 @@
   background-repeat: repeat-x;*/
 }
 
+.authorheader {
+    text-align: left;
+}
+
 .blogtitle {
   font-weight: 400;
   color: #000;
@@ -29,6 +33,11 @@
   margin-bottom: 1rem;
   /*font-size: 18px;*/
   font-family: courier;
+  display: inline-block;
+}
+
+.blogtitle h1 {
+    margin-top: 10px;
 }
 
 .bloghead p {
@@ -38,6 +47,8 @@
 .bloghead img , .authorimage img{
     height: 85px;
     padding: 10px;
+    vertical-align: top;
+    margin-right: 10px;
 }
 
 nav {
@@ -61,7 +72,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
   margin: 0;
   padding: 0 .5em;
@@ -140,7 +151,7 @@ p.readmore {
 .article-time {
     color: #95a5a6;
     font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;;

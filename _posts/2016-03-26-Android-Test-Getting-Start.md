@@ -67,15 +67,15 @@ dependencies {
 ```
 然后在 `src/test/xx.xx.xx/`新建一个 MainUnitTest.kt(名字随意)
 
-
-```kotlin
+{% highlight kotlin %}
 class MainUnitTest {
     @Test
     fun testSample() {
         println("hello")
     }
 }
-```
+{% endhighlight %}
+
 然后在菜单里点击 `buid` -> `select build variants`, 在弹出的面板里面，选择`Test Artifact`为 `Unit Tests`,
 
 然后再 Project 面板里面，鼠标右击 MainUnitTest.kt, 在弹出的菜单中选择 run MainUnitTest,
