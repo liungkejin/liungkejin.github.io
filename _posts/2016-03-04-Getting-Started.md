@@ -16,6 +16,12 @@ excerpt_separator: "```"
 个人页面应用了 [resumecard](http://ddbullfrog.github.io/resumecard/) 项目
 
 
-```bash
-echo "你好, Github Pages!";
-```
+{% highlight ruby %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}

@@ -8,7 +8,10 @@ rss_url:
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 
+highlight: true
 timezone: Asia/Shanghai
 
 # exclude: [vendor]
