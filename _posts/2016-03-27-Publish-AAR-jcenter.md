@@ -29,6 +29,8 @@ JCenter是Goovy Grape内的默认仓库，Gradle内建支持（jcenter()仓库�
 
 ## 第一步
 
+*[注意：你的工程必须为 library, 即："apply plugin: 'com.android.library'", 否则后面的 bintray.gradle 会 build 失败]*
+
 第一步当然是注册 [bintray](https://bintray.com) 的账号, 得到 user 和 apiKey,
 apiKey 在你的 profile 里面，编辑你的 Profile，就能看到 API Key,
 把你的 user 和 apiKey, 写入到工程目录下的 local.properties 文件中
@@ -219,7 +221,7 @@ project/
 写入
 
 ```properties
-# 库的报名
+# 库的包名
 PROJ_GROUP=cn.kejin.android.views
 # 库的ID
 PROJ_ARTIFACTID=XImageView
