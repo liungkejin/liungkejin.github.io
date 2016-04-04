@@ -10,7 +10,7 @@
     text-align: left;;
     /*text-shadow: 0 1px 0 rgba(0,0,0,.1);*/
     background-color: #fff;
-    max-width: 600px;
+    max-width: 650px;
     width: 90%;
     margin: 30px auto;
   /*background-color: #6f5499;
@@ -57,7 +57,7 @@ nav {
   margin-bottom: 2em;
   text-align: center;
   margin: 20px auto 2em auto;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 nav ul {
@@ -104,7 +104,7 @@ nav.menu li:last-child {
  */
 
 .blogmain {
-    max-width: 600px;
+    max-width: 650px;
     width: 90%;
     margin: 20px auto;
     font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
@@ -200,7 +200,7 @@ div.authorimage {
     text-align: left;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 }
 
 .footer-copyright {

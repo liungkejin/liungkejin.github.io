@@ -1,7 +1,7 @@
 ---
 layout: post_layout
 title: Android Test 学习基础
-time: 2016/03/26
+time: 2016年03月26日 星期六
 location: 上海
 pulished: true
 excerpt_separator: "##"
@@ -44,7 +44,7 @@ Android 的测试种类:
 也可以再 buid.gradle 里面重新设置目录，或者加入新的目录, 比如我想用 kotlin 来写单元测试
 
 
-```gradle
+```groovy
 android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -60,7 +60,7 @@ android {
 JUnit Test 测试配置比较简单, 他的依赖只有一个, 使用的是 JUnit4
 
 
-```
+```groovy
 dependencies {
     testCompile 'junit:junit:4.12'
 }
@@ -87,7 +87,7 @@ class MainUnitTest {
 Instrumentation Tests 所需要依赖的东西就比较多一点
 
 
-```gradle
+```groovy
 dependencies {
     androidTestCompile 'com.android.support.test:runner:0.4'
     androidTestCompile 'com.android.support.test:rules:0.4'
@@ -104,7 +104,7 @@ dependencies {
 设置 `AndroidJUnitRunner` 作为默认的 test instrumentation runner, 配置 build.gradle
 
 
-```gradle
+```groovy
 android {
     defaultConfig {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -115,7 +115,7 @@ android {
 在 `src/androidTest/XX.XX.XX` 下添加 MainActivtyTest.kt
 
 
-```
+```kotlin
 class MainActivityTest : ActivityInstrumentationTestCase2<MainActivity>(MainActivity::class.java) {
 
     @Before

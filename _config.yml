@@ -7,14 +7,25 @@ url: https://liungkejin.github.io
 rss_url:
 
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
 
 highlight: true
+highlighter: pygments
+
 timezone: Asia/Shanghai
 
-# exclude: [vendor]
+markdown: maruku
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
 
-# paginate: 5
-# paginate_path: "blog/page:num"
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style

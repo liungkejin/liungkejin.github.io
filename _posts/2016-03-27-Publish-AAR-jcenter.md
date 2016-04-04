@@ -1,7 +1,7 @@
 ---
 layout: post_layout
 title: Android Studio 发布项目到Maven/JCenter仓库
-time: 2016/03/26
+time: 2016年03月27日 星期天
 location: 上海
 pulished: true
 excerpt_separator: "##"
@@ -33,14 +33,14 @@ JCenter是Goovy Grape内的默认仓库，Gradle内建支持（jcenter()仓库�
 apiKey 在你的 profile 里面，编辑你的 Profile，就能看到 API Key,
 把你的 user 和 apiKey, 写入到工程目录下的 local.properties 文件中
 
-```
+```bash
 project/
     \_ local.properties
 ```
 
 写入
 
-```
+```groovy
 bintray.user=XXX
 bintray.apikey=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
@@ -61,7 +61,7 @@ project/
 
 然后在这个 Module 的 build.gradle 里面追加下面代码
 
-```
+```groovy
 buildscript {
     repositories {
         jcenter()
@@ -79,7 +79,7 @@ apply from: 'bintray.gradle'
 
 将以下代码写入到 bintray.gradle 文件中
 
-```gradle
+```groovy
 group = PROJ_GROUP
 version = PROJ_VERSION
 project.archivesBaseName = PROJ_ARTIFACTID
@@ -281,6 +281,6 @@ gradle artifactoryPublish  # 发布到oss.ifrog.org
 
 最后，通过之后，就可以方便的使用这种方式来引用你的库了
 
-```
+```groovy
 compile 'cn.kejin.android.views:XImageView:1.0.0'
 ```
