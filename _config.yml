@@ -9,7 +9,7 @@ rss_url:
 # Build settings
 
 highlight: true
-highlighter: pygments
+#highlighter: rouge
 
 timezone: Asia/Shanghai
 
