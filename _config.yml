@@ -13,7 +13,7 @@ highlighter: pygments
 
 timezone: Asia/Shanghai
 
-markdown: maruku
+markdown: kramdown
 kramdown:
   auto_ids: true
   footnote_nr: 1
