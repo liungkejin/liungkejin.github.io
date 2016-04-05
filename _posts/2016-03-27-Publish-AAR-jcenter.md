@@ -35,7 +35,7 @@ JCenter是Goovy Grape内的默认仓库，Gradle内建支持（jcenter()仓库�
 apiKey 在你的 profile 里面，编辑你的 Profile，就能看到 API Key,
 把你的 user 和 apiKey, 写入到工程目录下的 local.properties 文件中
 
-```bash
+```
 project/
     \_ local.properties
 ```
