@@ -9,7 +9,7 @@ excerpt_separator: "#"
 [ExRecyclerView](https://github.com/liungkejin/ExRecyclerView)
 *ExRecyclerView 使用 Kotlin 编写*
 
-![demo](/_assets/exrecyclerview-demo.gif)
+![demo](/assets/demo/exrecyclerview-demo.gif)
 
 很多时候我们在使用 RecyclerView 时, 总是会碰到需要设置一个 header 或者 footer 的情况,
 比如我们要加一个显示加载更多的footer，跟随 RecyclerView 一起滑动的 header, 等等,
@@ -24,8 +24,7 @@ ExRecyclerView一共实现了3个功能:
 3. 支持 Drag 和 Swipe 拖动 item 或者 swipe 删除 item (可以自定义拖动,滑动的样式)
 
 ExRecyclerAdapter 是一个内置了 List 集合的 RecyclerAdapter,
-每次改变数据都会主动进行相应的notify(也可以主动不进行 notify) , 另外 ExRecyclerAdapter 也实现了一个简单的
-ItemActionListener!
+每次改变数据都会主动进行相应的notify(也可以主动不进行 notify)
 
 ## ExRecyclerView
 
@@ -74,7 +73,7 @@ exRecycler.itemTouchHelper = customItemTouchHelper
 | `removeHeader(view)` `removeHeader(hashcode)` | 根据 view 或者他的 hashcode 移除掉这个 header |
 | | |
 | `getFooterSize()` | footer size |
-| `hasFooter(view)` | 判断是否由此footer |
+| `hasFooter(view)` | 判断是否有此footer |
 | `addFooter(view)` | 加入一个 footer, 并返回它的 hashcode, 这个根据这个 hashcode 获取或者删除这个footer |
 | `getFooter(hashcode)`  | 根据 view 的 hashcode 找到这个footer |
 | `removeFooter(view)` `removeFooter(hashcode)` | 根据 view 或者他的 hashcode 移除掉这个 footer |
@@ -91,11 +90,12 @@ exRecycler.itemTouchHelper = customItemTouchHelper
 即不允许在正在执行 load more 操作时再回调 load more 事件, 当 load more 结束之后,
 就必须要调用 `exRecycler.endLoadMore()` 来结束 loadingMore 状态.
 
-```kotlin
+```java
 interface OnLoadMoreListener {
     /**
      * @return Boolean 是否处理了loadmore操作,
-     * 如果返回true, 表示进行了 loadmore 操作, 则在没有调用 endLoadMore() 之前不会再回调 loadmore
+     * 如果返回true, 表示进行了 loadmore 操作,
+     *      则在没有调用 endLoadMore() 之前不会再回调 loadmore
      * 如果返回false, 表示没有进行 loadmore 操作, 则继续监听滑动
      */
     fun onLoadMore(): Boolean
@@ -103,7 +103,7 @@ interface OnLoadMoreListener {
 ```
 
 | 属性/方法 | 说明 |
-| --------------- |
+| --------- | ------ |
 | `isLoadingMore` | 判断是否正在loading more 的状态, 如果为true, 则表示正在加载更多, ExRecyclerView 不会再回调loadmore 操作 |
 | `loadMoreListener` `setOnLoadMoreListener` | 设置监听 |
 | `endLoadMore()` | 将isLoadingMore 的状态置为 false, 让 ExRecyclerView 继续监听到底回调 loadmore 操作
@@ -119,13 +119,13 @@ ExRecyclerView 内部已经实例化了一个 ItemTouchHelper, 并已经进行�
 不过要注意不能移动 header 或者 footer, 还有将ExRecyclerView 的内部变量 itemTouchCallback = null, itemActionListener = null;
 
 | 属性/方法 | 说明 |
-| --------------- |
+| --------- | ------ |
 | `itemTouchHelper` | ExRecyclerView 的内置 ItemTouchHelper |
 | `itemTouchCallback` | 自定义的ItemTouchHelper.Callback |
 | `itemActionListener` | ItemActionListener的实现 |
 
 
-#### ItemActionListener
+### ItemActionListener
 
 ItemActionListener 其实只是把 ItemTouchHelper.Callback 的主要的方法抽离了出来, 方便实现,
 ExRecyclerAdapter 实现了一个简单的 ItemActionListener, 并可以控制 Drag 或者 Swipe 是否可用
@@ -133,6 +133,27 @@ ExRecyclerAdapter 实现了一个简单的 ItemActionListener, 并可以控制 D
 
 ## ExRecyclerAdapter
 
+ExRecyclerAdapter 实现了一个简单的ItemActionListener
+
+| 属性/方法 | 说明 |
+| --------- | ------ |
+| `set(pos, model)` | 改变某一个位置的数据 |
+| `set(Collectoin<Model>)` | 重新设置所有的数据 |
+| `move(from, to)` | 移动一个数据 |
+| `add(index, model)` | 在index位置加入一个数据 |
+| `add(model)` | 追加一个数据 |
+| `addAll(Collectoin<Model>)` | 追加一个集合数据 |
+| `removeAt(index)` | 移除一个指定的数据 |
+| `remove(model)` | 移除这个 model数据, 如果有多个, 只会移除第一个 |
+| `removeAll(model)` | 移除所有的指定数据 |
+| `clear()` | 清除所有的数据 |
+| | |
+| `longPressDragEnable` | 是否可用长按拖动 |
+| `itemViewSwipeEnable` | 是否滑动可用 |
+| `enableDragAndSwipe()` | 使两个都可用 |
+| `disableDragAndSwipe()` | 禁用 drag 和 swipe |
+
+所有的数据操作方法都有一个 notify 参数, 默认为 true, 且如果成功操作数据, 返回 true
 
 
 ## PS `ItemTouchHelper` 的使用
@@ -141,24 +162,45 @@ ItemTouchHelper 的是使用也比较简单, 基本步骤就是:
 
 1. 实现 ItemTouchHelper.Callback 这个类
 
-    ```kotlin
-    class itemTouchCallback : ItemTouchHelper.Callback() {
-        override fun getMovementFlags(recyclerView: RecyclerView?, viewHolder: ViewHolder?): Int { }
+```java
+class itemTouchCallback : ItemTouchHelper.Callback() {
+    /**
+     * 这里返回移动的标志位, 用来指示Drag 和 Swipe 可移动的方向
+     * 比如 dragFlags = TOP | BOTTOM 则表示只能左右拖动 item
+     * swipeFlags = START | END 表示只能水平滑动 item
+     * 最后返回使用 makeMovementFlags(dragFlags, swipeFlags) 返回
+     */
+    override fun getMovementFlags(
+                        recyclerView: RecyclerView?,
+                        viewHolder: ViewHolder?): Int { }
 
-        override fun onMove(recyclerView: RecyclerView?, viewHolder: ViewHolder?, target: ViewHolder?): Boolean { }
+    /**
+     * 当一个 item 被拖动到另一个 item(target) 上时,
+     * 如果这个target可以移动, 会请求一次 onMove
+     * 如果返回 true, 则表示两个 item 交换位置成功,
+     * 所以会在这里进行 Adapter 的数据交换, 保证移动正确
+     */
+    override fun onMove(
+                    recyclerView: RecyclerView?,
+                    viewHolder: ViewHolder?,
+                    target: ViewHolder?): Boolean { }
 
-        override fun onSwiped(viewHolder: ViewHolder?, direction: Int) { }
-    }
-    ```
+    /**
+     * 当一个 item 完成了一次有效的滑动,
+     * 会回调 onSwiped, direction 表示滑动的方向(START 或者 END)
+     */
+    override fun onSwiped(viewHolder: ViewHolder?, direction: Int) { }
+}
+```
 
 2. 使用这个 Callback 实例化 ItemTouchHelper
 
-    ```kotlin
-    val itemTouchHelper = ItemTouchHelper(itemTouchCallback())
-    ```
+```java
+val itemTouchHelper = ItemTouchHelper(itemTouchCallback())
+```
 
 3. 将 ItemTouchHelper Attach 到 RecyclerView
 
-    ```kotlin
-    itemTouchHelper.attachToRecyclerView(recyclerView)
-    ```
+```java
+itemTouchHelper.attachToRecyclerView(recyclerView)
+```
