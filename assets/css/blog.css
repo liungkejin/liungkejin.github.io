@@ -151,10 +151,17 @@ p.readmore {
 .article-time {
     color: #95a5a6;
     font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.article-hint {
+    color: #95a5a6;
+    font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
     font-size: 13px;
     font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;;
+    text-align: center;
     margin-bottom: 20px;
 }
 

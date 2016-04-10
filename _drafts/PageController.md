@@ -13,4 +13,16 @@ excerpt_separator: "#"
 
 所以, PageController 就是用来管理控制分页加载时的 page 的, 并方便管理整个分页加载的处理流程
 
-## PageController
+# PageController
+
+PageController 的前提条件:
+
+- page 按顺序进行加载, 第一页为刷新页
+- 页面加载结果只有三种 SUCCESS, FAILED, NO_MORE(没有更多数据了)
+- 一次只允许一页正在加载
+
+一般来说, 分页加载的顺序为
+
+```
+refresh ->
+```
