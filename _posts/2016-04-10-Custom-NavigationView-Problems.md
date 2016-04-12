@@ -170,7 +170,7 @@ public void draw(@NonNull Canvas canvas) {
 
 知道了这个原理, 我们可以用这个 `ScrimInsetsFrameLayout` 放置我们自定义的 Menu View,
 并可以用它的属性`app:insetForeground`定义相交区域的颜色,
-或者根据 `ScrimInsetsFrameLayout` 的代码写一个自己自定义View, 并且我们还可以用
+或者根据 `ScrimInsetsFrameLayout` 的代码写一个自己自定义View
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
