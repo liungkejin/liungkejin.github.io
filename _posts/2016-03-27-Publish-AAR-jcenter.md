@@ -1,6 +1,6 @@
 ---
 layout: post_layout
-title: Android Studio 发布项目到Maven/JCenter仓库
+title: Android Studio 发布Java项目到Maven/JCenter仓库
 time: 2016年03月27日 星期天
 location: 上海
 pulished: true

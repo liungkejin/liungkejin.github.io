@@ -144,6 +144,10 @@ p.readmore {
  * 文章全文
  */
 
+blockquote {
+     font-size: 13px;
+ }
+
 .article-title {
     text-align: center;
 }
