@@ -6,12 +6,20 @@ email: liungkejin@foxmail.com
 github: liungkejin
 gavatar: /assets/img/avatar.JPG
 workHistory:
+- work4:
+  company: 上海本趣网络科技有限公司
+  location: 中国, 上海
+  title: Android & Unity & AR 开发工程师
+  started: 2016
+  duration: (2016.5 - Present)
+  description: 开发 "无他相机" 安卓端
+
 - work3:
   company: 上海大银幕网络科技有限公司
   location: 中国，上海
   title: Android 开发工程师
   started: 2015
-  duration: (2015.10 - Present)
+  duration: (2015.10 - 2016.5)
   description: 开发和维护 "公证电影" App
 
 - work2:
@@ -54,7 +62,7 @@ programmingSkills:
   percentage: 90%
 - CPP:
   name: C/C++
-  percentage: 70%
+  percentage: 80%
 - PHP:
   name: PHP
   percentage: 30%

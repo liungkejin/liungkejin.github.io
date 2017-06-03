@@ -47,7 +47,7 @@ fun invisibleView(view: View) {
     view.visibility = View.INVISIBLE
 }
 // 即使允许传入 null, kotlin 也可以很轻松的避免 Null 异常
-fun invisibleView(view: Vieww?) {
+fun invisibleView(view: View?) {
     view?.visibility = View.INVISIBLE
 }
 ```
